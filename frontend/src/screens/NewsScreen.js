@@ -6,25 +6,25 @@ const NewsScreen = ({
     {
       id: '1',
       title: 'Comienzan las obras de los termotanques',
-      date: '2 days ago',
+      date: 'Hace 2 días',
       image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=80&q=80',
     },
     {
       id: '2',
       title: 'Modificacion del sector del fogonero',
-      date: '1 week ago',
+      date: 'Hace 1 semana',
       image: 'https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=80&q=80',
     },
     {
       id: '3',
       title: 'trabajos en la iluminacion del predio',
-      date: '2 weeks ago',
+      date: 'Hace 2 semanas',
       image: 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=80&q=80',
     },
     {
       id: '4',
       title: 'sembrado de chancha 1 y 2 de rugby',
-      date: '1 month ago',
+      date: 'Hace 1 mes',
       image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=80&q=80',
     },
   ]
