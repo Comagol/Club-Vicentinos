@@ -3,14 +3,16 @@ const mongoose = require('mongoose');
 const newsSchema = new mongoose.Schema({
     title: {
         type: String,
-        required: true
+        required: true,
+        trim: true
     },
     content: {
         type: String,
         required: true
     },
     image: {
-        type: String
+        type: String,
+        default: null
     },
     author: {
         type: mongoose.Schema.Types.ObjectId,
@@ -34,6 +36,8 @@ const newsSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     }
+}, {
+    timestamps: true
 });
 
 // Update the updatedAt timestamp before saving

@@ -21,7 +21,13 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/club-vice
 .then(() => console.log('Connected to MongoDB'))
 .catch((err) => console.error('MongoDB connection error:', err));
 
+// Import models
+require('./models/User');
+require('./models/News');
+require('./models/MembershipType');
+
 // Routes
+app.use('/api/auth', require('./routes/auth.routes'));
 app.use('/api/news', require('./routes/news.routes'));
 app.use('/api/membership', require('./routes/membership.routes'));
 app.use('/api/profile', require('./routes/profile.routes'));
