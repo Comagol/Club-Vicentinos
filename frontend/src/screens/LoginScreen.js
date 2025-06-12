@@ -12,7 +12,7 @@ import { Input, Button, Text } from 'react-native-elements';
 
 // Usuario hardcodeado
 const MOCK_USER = {
-  email: 'admin@clubvicentinos.com',
+  email: 'adminclubvicentinos.com',
   password: 'admin123',
 };
 

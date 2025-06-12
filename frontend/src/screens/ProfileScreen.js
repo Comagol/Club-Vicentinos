@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, Button } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const ProfileScreen = ({
   user = {
@@ -11,6 +12,7 @@ const ProfileScreen = ({
     avatar: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMK2J4dfHECS-HsqJlZDf_xu5qtMR_VKT4Mg&s',
   },
 }) => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       {/* Header */}
@@ -33,6 +35,15 @@ const ProfileScreen = ({
       <View style={styles.infoSection}>
         <InfoRow label="Email" value={user.email} />
         <InfoRow label="Phone" value={user.phone} />
+      </View>
+
+      {/* Logout Button */}
+      <View style={{ marginTop: 32, marginHorizontal: 32 }}>
+        <Button
+          title="Cerrar sesión"
+          color="#d32f2f"
+          onPress={() => navigation.navigate('Auth')}
+        />
       </View>
     </View>
   );
