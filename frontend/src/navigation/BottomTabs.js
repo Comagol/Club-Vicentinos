@@ -18,7 +18,7 @@ const BottomTabs = () => {
           } else if (route.name === 'Membership') {
             iconName = 'card';
           } else if (route.name === 'News') {
-            iconName = 'newspaper';
+            iconName = 'newspaper-outline';
           }
           return <Ionicons name={iconName} size={size} color={color} />;
         },
